@@ -1,0 +1,65 @@
+
+
+INSERT INTO student values(1,'akshu',15,'female','vij');
+INSERT INTO student values(2,'varun',16,'male','gnt');
+INSERT INTO student values(3,'uma',18,'female','banglore');
+INSERT INTO student values(4,'kiran',19,'male','kolkata');
+INSERT INTO student values(5,'harish',20,'male','hyd');
+INSERT INTO student values(6,'kamala',17,'female','pdrl');
+INSERT INTO student values(7,'ramesh',14,'male','chennai');
+INSERT INTO student values(8,'vimala',19,'female','hyd');
+INSERT INTO student values(9,'vinitha',20,'female','gnt');
+INSERT INTO student values(10,'suresh',17,'male','chennai');
+
+INSERT INTO department values(001,'CSE');
+INSERT INTO department values(002,'ECE');
+INSERT INTO department values(003,'MECH');
+INSERT INTO department values(004,'CIVIL');
+INSERT INTO department values(005,'IT');
+INSERT INTO department values(006,'AIML');
+
+INSERT INTO result values(9.0,8.33,9.44,7.86);
+INSERT INTO result values(9.7,8.43,7.44,9.86);
+INSERT INTO result values(7.0,7.33,8.44,8.86);
+INSERT INTO result values(8.0,7.33,9.46,7.66);
+INSERT INTO result values(7.0,8.39,9.74,9.86);
+INSERT INTO result values(9.0,8.33,9.44,7.86);
+INSERT INTO result values(8.0,8.93,7.44,8.86);
+
+INSERT INTO project values('netflix','css','geeksforgeeks',1300);
+INSERT INTO project values('currentbill','python','w3 schools',1300);
+INSERT INTO project values('portfolio','java','tutorial point',1300);
+INSERT INTO project values('whether','css','kaggle',1300);
+INSERT INTO project values('blood bank','dbms','geeksforgeeks',1300);
+INSERT INTO project values('hotel management','c++','frontline media',1300);
+INSERT INTO project values('online shopping','dbms','prep insta',1300);
+
+INSERT INTO attendence values(1,4);
+INSERT INTO attendence values(2,64);
+INSERT INTO attendence values(3,45);
+INSERT INTO attendence values(4,48);
+INSERT INTO attendence values(5,34);
+INSERT INTO attendence values(6,75);
+INSERT INTO attendence values(7,67);
+INSERT INTO attendence values(8,64);
+INSERT INTO attendence values(9,72);
+INSERT INTO attendence values(10,39);
+
+INSERT INTO permission values(1,'akshu','fever',3);
+INSERT INTO permission values(2,'varun','cold',3);
+INSERT INTO permission values(3,'uma','stomachache',3);
+INSERT INTO permission values(4,'kiran','headache',3);
+INSERT INTO permission values(5,'harish','fever',3);
+INSERT INTO permission values(6,'kamala','cough',3);
+INSERT INTO permission values(7,'ramesh','cold',3);
+INSERT INTO permission values(8,'vimala','fever',3);
+INSERT INTO permission values(9,'vinitha','cold',3);
+INSERT INTO permission values(10,'suresh','cough',3);
+create table p_ext(p_days int,f_amount int);
+insert into p_ext values(4,200);
+commit;
+insert into p_ext values(5,600);
+savepoint A1;
+insert into p_ext values(6,700);
+savepoint A2;
+rollback;

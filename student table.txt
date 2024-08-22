@@ -1,0 +1,45 @@
+
+CREATE TABLE student(
+student_id INT,
+student_name VARCHAR(23),
+student_age INT,
+student_gender VARCHAR(10),
+student_adress VARCHAR(20),
+PRIMARY KEY(student_id));
+-- department
+CREATE TABLE department(
+department_id INT,
+department_name VARCHAR(30),
+PRIMARY KEY(department_id));
+-- student results
+CREATE TABLE result(
+res_firstyear FLOAT,
+res_secondyear FLOAT,
+res_thirdyear FLOAT,
+res_fourthyear FLOAT);
+-- student project,languanges
+CREATE TABLE project(
+project_name VARCHAR(20) NOT NULL,
+languange_used VARCHAR(20),
+project_sourcecode VARCHAR(30),
+project_price INT);
+-- student attendence
+CREATE TABLE attendence(
+student_id INT,
+hours_worked INT,
+PRIMARY KEY(student_id));
+-- student leave
+CREATE TABLE permission(
+student_id INT,
+student_name VARCHAR (30),
+student_reason VARCHAR(30),
+permission_days INT,
+PRIMARY KEY(student_id));
+
+
+
+
+
+
+
+

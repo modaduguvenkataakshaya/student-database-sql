@@ -1,0 +1,3 @@
+
+update department set department_id=056 where department_name='CSE';
+select * from department;
